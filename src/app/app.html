@@ -1,16 +1,32 @@
-<nav
+<div
   style="
-    display: flex;
-    gap: 15px;
+    text-align: center;
+    font-family: sans-serif;
     padding: 20px;
-    background: #f4f4f4;
-    border-bottom: 2px solid #ccc;
+    background-color: #e0f7fa;
+    min-height: 100vh;
   "
 >
-  <a routerLink="/red">Red</a>
-  <a routerLink="/green">Green</a>
-  <a routerLink="/blue">Blue</a>
-  <a routerLink="/black">Black</a>
-</nav>
+  <h1 style="color: #0277bd; font-size: 2.5rem; margin-bottom: 30px">Top 3 Cetáceos 🐬</h1>
 
-<router-outlet></router-outlet>
+  <app-tarjeta
+    nombreAnimal="Delfín Nariz de Botella"
+    descripcion="Extremadamente inteligente, juguetón y famoso por su 'sonrisa' permanente."
+    imagenUrl="bottlenose.jpg"
+  >
+  </app-tarjeta>
+
+  <app-tarjeta
+    nombreAnimal="Ballena Jorobada"
+    descripcion="Famosa por sus cantos complejos y sus impresionantes saltos fuera del agua."
+    imagenUrl="humpback.jpg"
+  >
+  </app-tarjeta>
+
+  <app-tarjeta
+    nombreAnimal="Orca"
+    descripcion="El superdepredador de los océanos, viaja en grupos familiares muy unidos."
+    imagenUrl="orca.jpg"
+  >
+  </app-tarjeta>
+</div>

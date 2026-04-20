@@ -1,0 +1,17 @@
+<div class="carta-animal">
+  <div class="imagen-contenedor">
+    <img [src]="imagenUrl" alt="Foto de {{ nombreAnimal }}" />
+  </div>
+
+  <div class="info-contenedor">
+    <h2>{{ nombreAnimal }}</h2>
+    <p>{{ descripcion }}</p>
+
+    <hr />
+
+    <div class="likes-seccion">
+      <span class="contador">{{ likes }} Me gusta</span>
+      <button (click)="darLike()">--Dar like--</button>
+    </div>
+  </div>
+</div>
